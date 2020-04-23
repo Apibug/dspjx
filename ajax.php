@@ -4,7 +4,7 @@ $act=isset($_GET['act'])?$_GET['act']:null;
 $url=isset($_GET['url'])?$_GET['url']:null;
 	switch($act){
 		case 'dsp':
-        $json = w0ai1uoCurlGet("https://apibug.com/api/dsp/?url=$url", false);
+        $json = w0ai1uoCurlGet("https://www.apibug.com/api/dsp/?url=$url", false);
         $res = json_decode($json, true);
 			$name = $res['data']['title'];//名称
 			$img = $res['data']['img'];//图
